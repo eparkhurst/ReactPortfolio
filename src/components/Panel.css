@@ -1,12 +1,50 @@
-.plane {
-  position:absolute;
-  width:200px;
-  height:200px;
-  background:rgba(0,0,0,0.6);
-  color:#fff;
-  font-size:10em;
-  text-align:center;
+.image-panel {
+  width:350px;
+  margin: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s;
+  text-align: left;
+  margin: 25px auto;
+  background-color: white;
 }
-.plane img{
-  width:100%;
+.image-panel:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+.image-panel img{
+  width:350px;
+  height:200px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.image-title{
+  padding: 15px;
+}
+.image-title h3{
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  color: #323232;
+  margin: 0;
+}
+.image-title p{
+  font-family: 'Open Sans';
+  color: #7e7e7e;
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (min-width:800px){
+  .image-panel{
+    display: inline-block;
+    margin: 30px;
+  }
+}
+
+@media (max-width:450px) {
+  .image-panel{
+    width:300px
+  }
+  .image-panel img{
+    width: 300px;
+  }
 }
