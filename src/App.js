@@ -25,9 +25,16 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h1 className="eliHeader">Elijah Parkhurst</h1>
-          <span onClick={this.toggleDropdown} className="hamburger-icon" ><img src="hamburger.png" /> </span>
+          <span
+            onClick={this.toggleDropdown}
+            className="hamburger-icon" >
+            <img src="hamburger.png" alt="hamburger icon" />
+          </span>
           <div className={coverClass} onClick={this.toggleDropdown}></div>
-          <Dropdown className={this.state.className} toggle={this.toggleDropdown}/>
+          <Dropdown
+            className={this.state.className}
+            toggle={this.toggleDropdown}
+          />
           <nav>
             <Link to="/about" className="headerBtn">About</Link>
             <Link to="/portfolio" className="headerBtn">Portfolio</Link>

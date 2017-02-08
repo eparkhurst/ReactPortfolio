@@ -15,7 +15,6 @@ class Dropdown extends Component {
     return <div className={currentClass} onClick={this.toggle}>
       <Link to="/about" className="dropdownBtn">About</Link>
       <Link to="/portfolio" className="dropdownBtn">Portfolio</Link>
-      <Link to="/portfolio" className="dropdownBtn">Conway's Game</Link>
     </div>
   }
 }

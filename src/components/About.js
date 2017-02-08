@@ -7,9 +7,9 @@ class About extends Component{
     return <div className="about">
       <h1 className="about-title">About</h1>
       <div className="about-panel">
-        <img className="head-shot" src={headShot}/>
+        <img className="head-shot" src={headShot} alt="a handsome head shot of Elijah Parkhurst"/>
         <p>
-          I am a fullstack web developer living in Denver Colorado. In September 2015 I quit the world of anyalytical chemistry and vowed to never use Windows ME again. After several months of tinkering and 6 months in a fullstack immersion program at Galvanize I can now call myself a developer. From creating RESTful APIs to sprucing up the look of a site, I like it all.
+          I’m a Colorado kid doing my best to grow along with Denver. Professionally, I am a full stack developer with an emphasis on the front end. I dream in React but AngularJS and I still have a good relationship. Don’t put me in a box though. I’ve made RESTful APIs, native mobile apps and know my way around an ERD. If I look like a good fit for your team my contact info is on this very page!
         </p>
       </div>
       <div className="about-panel">
