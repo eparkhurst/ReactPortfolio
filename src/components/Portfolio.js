@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Carousel from './Carousel'
 import brewsBrothers from '../imgs/brewsbrothers.png'
 import moviePicker from '../imgs/moviepicker.png'
 import trackPath from '../imgs/trackpath.png'
