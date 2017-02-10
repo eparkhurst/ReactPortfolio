@@ -5,6 +5,7 @@ class Panel extends Component{
   state={
     className:"expand hidden",
   }
+
   constructor(){
     super()
     this.toggle = this.toggle.bind(this)

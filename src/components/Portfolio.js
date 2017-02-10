@@ -38,7 +38,6 @@ const imgArray=[
     title:'Movie Picker',
     description:'A game to pick the imdb rank of movies. This was my first project',
     github: 'https://github.com/eparkhurst/Movie-Picker',
-    link: 'https://intense-heat-9278.firebaseapp.com/'
   },
   {image: trackPath,
     title:'TrackPath',
@@ -55,7 +54,6 @@ const imgArray=[
     title:'Git Up',
     description:'A group project using Express and Postgres for parents to monitor their childrens activity',
     github: 'https://github.com/GitAwwwShit',
-    link: 'http://huber007.dyndns.org:3000/'
   },
 ]
 

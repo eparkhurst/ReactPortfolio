@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Dropdown from './components/Dropdown'
+import Dropdown from './Dropdown'
 import './App.css';
 import {Link} from 'react-router';
 
@@ -20,7 +20,6 @@ class App extends Component {
     }else{
       this.setState({className:'hidden'})
     }
-    console.log('clicked');
   }
   render() {
     const coverClass = 'cover '+this.state.className
