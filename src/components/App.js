@@ -6,7 +6,7 @@ import {Link} from 'react-router';
 class App extends Component {
   constructor(){
     console.log("Thanks for visiting my portfolio site");
-    console.log("If you want to see the uncompiled code for this site please visit https://github.com/eparkhurst/ReactPortfolio");
+    console.log("This app was made using React. I went for a material design but didn't use any css libraries.If you want to see the uncompiled code for this site please visit https://github.com/eparkhurst/ReactPortfolio.");
     console.log("Feel free to email me at eli.parkhurst@gmail.com");
     super()
     this.toggleDropdown = this.toggleDropdown.bind(this)
