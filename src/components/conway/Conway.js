@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Cmap from './Cmap';
+import './Conway.css';
 
 class Conway extends Component{
 
@@ -13,15 +14,30 @@ class Conway extends Component{
 
     render(){
         return <div>
-            <h1>Conways</h1>
-                <Cmap ref={instance => { this.child = instance; }} random="true" height="3" width="3"/>
-            <button onClick={()=>{this.start()}}>Start</button>
-            <button onClick={()=>{this.stop()}}>Stop</button>
+            <h2 className="conway-title">Conway's Game of Life</h2>
+            <h5 className="game-prep">Click any cell to toggle 'Life'</h5>
+            <button className="game-btn st-btn" onClick={()=>{this.start()}}>Start</button>
+            <button className="game-btn st-btn" onClick={()=>{this.stop()}}>Stop</button>
+            <div className="game">
+                <Cmap ref={instance => { this.child = instance; }} height="50" width="50"/>
+            </div>
+            <button className="game-btn" onClick={()=>{this.blank()}}>Generate Blank</button>
+            <button className="game-btn" onClick={()=>{this.random()}}>Generate Random</button>
             </div>
     }
 
+    random(){
+        this.stop();
+        this.child.initializeMap(true);
+    }
+
+    blank(){
+        this.stop()
+        this.child.initializeMap(false);
+    }
+
     start(){
-        let interval = setInterval(this.iterate, 1000);
+        let interval = setInterval(this.iterate, 250);
         this.setState({interval:interval});
     }
 
@@ -31,6 +47,10 @@ class Conway extends Component{
 
     iterate(){
         this.child.updateMap()
+    }
+
+    componentWillUnmount(){
+        clearInterval(this.state.interval)
     }
 }
 
