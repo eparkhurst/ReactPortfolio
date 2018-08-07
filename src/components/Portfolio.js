@@ -8,6 +8,7 @@ import gingerMingle from '../imgs/gingerMingle.png'
 import paintedWithFire from '../imgs/paintedWithFire.png'
 import gitUp from '../imgs/gitup.png'
 import Panel from './Panel'
+import Conway from './conway/Conway'
 import './Portfolio.css'
 
 const imgArray=[
@@ -62,16 +63,19 @@ class Portfolio extends Component{
   render(){
     return <div className="portfolio">
       <h1 className="portfolio-title">Portfolio</h1>
-      {imgArray.map((e, i)=>{
-        return <Panel
-          image={e.image}
-          title={e.title}
-          description={e.description}
-          github={e.github}
-          link={e.link}
-          key={i}
-        />
-      })}
+      <div>
+          {imgArray.map((e, i)=>{
+              return <Panel
+                  image={e.image}
+                  title={e.title}
+                  description={e.description}
+                  github={e.github}
+                  link={e.link}
+                  key={i}
+              />
+          })}
+      </div>
+      <Conway/>
     </div>
   }
 }

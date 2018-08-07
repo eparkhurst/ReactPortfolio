@@ -9,7 +9,7 @@ class About extends Component{
       <div className="about-panel">
         <img className="head-shot" src={headShot} alt="a handsome head shot of Elijah Parkhurst"/>
         <p>
-          I’m a Colorado kid doing my best to grow along with Denver. Professionally, I am a full stack developer with an emphasis on the front end. I dream in React but AngularJS and I still have a good relationship. Don’t put me in a box though. I’ve made RESTful APIs, native mobile apps and know my way around an ERD. If I look like a good fit for your team my contact info is on this very page!
+          I’m a Colorado kid doing my best to grow along with Denver. Professionally, I am a full stack developer with an emphasis on the front end. Im currently working in Angular 6 with a Python/Flask/Postgres backend but I have worked with React and Node in the Past. My current project also involves NLP and some Machine learning. If I look like a good fit for your team feel free to contact me.
         </p>
       </div>
       <div className="about-panel contact-me">

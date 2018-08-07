@@ -1,0 +1,11 @@
+.map{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
