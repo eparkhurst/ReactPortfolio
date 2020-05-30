@@ -31,13 +31,18 @@
   margin: 0 20px;
 }
 
+.selected {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
 .App-intro {
   font-size: large;
 }
 
 .eliHeader {
   position: absolute;
-  left: 30;
+  left: 30px;
 }
 
 .hamburger-icon {

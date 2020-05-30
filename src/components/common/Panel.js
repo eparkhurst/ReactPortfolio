@@ -2,22 +2,21 @@ import React, {Component} from 'react'
 import './Panel.css'
 
 class Panel extends Component {
-  state = {
-    className: "expand hidden",
-  }
 
   constructor() {
-    super()
-    this.toggle = this.toggle.bind(this)
+    super();
+    this.state = {
+      className: "expand hidden",
+    };
   }
 
-  toggle() {
+  toggle = () => {
     if (this.state.className === "expand hidden") {
       this.setState({className: 'expand'})
     } else {
       this.setState({className: 'expand hidden'})
     }
-  }
+  };
 
   render() {
     let linkClass = ''
