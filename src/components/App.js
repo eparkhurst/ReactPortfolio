@@ -1,28 +1,30 @@
 import React, {Component} from 'react';
 import Dropdown from './common/Dropdown'
 import './App.css';
-import {Link} from 'react-router';
+import {NavLink, Route, Switch} from 'react-router-dom';
+import About from "./views/About/About";
+import Portfolio from "./views/Portfolio/Portfolio";
+import Conway from "./views/Conways/Conway";
 
 class App extends Component {
   constructor() {
+    super();
     console.log("Thanks for visiting my portfolio site");
     console.log("This app was made using React. I went for a material design but didn't use any css libraries.If you want to see the uncompiled code for this site please visit https://github.com/eparkhurst/ReactPortfolio.");
     console.log("Feel free to email me at eli.parkhurst@gmail.com");
-    super()
-    this.toggleDropdown = this.toggleDropdown.bind(this)
+    this.state = {
+      className: 'hidden'
+    }
   }
 
-  state = {
-    className: 'hidden'
-  }
 
-  toggleDropdown() {
+  toggleDropdown = () => {
     if (this.state.className === 'hidden') {
       this.setState({className: ''})
     } else {
       this.setState({className: 'hidden'})
     }
-  }
+  };
 
   render() {
     const coverClass = 'cover ' + this.state.className;
@@ -41,13 +43,18 @@ class App extends Component {
             toggle={this.toggleDropdown}
           />
           <nav>
-            <Link to="/about" className="headerBtn">About</Link>
-            <Link to="/portfolio" className="headerBtn">Portfolio</Link>
-            <Link to="/conways" className="headerBtn">Conways</Link>
+            <NavLink activeClassName="selected" to="/about" className="headerBtn">About</NavLink>
+            <NavLink activeClassName="selected" to="/portfolio" className="headerBtn">Portfolio</NavLink>
+            <NavLink activeClassName="selected" to="/conways" className="headerBtn">Conways</NavLink>
           </nav>
         </div>
         <div className="page-wrapper">
-          {this.props.children}
+          <Switch path="/" component={App}>
+            <Route path="/about" component={About} />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/conways" component={Conway} />
+            <Route path="/" component={About} />
+          </Switch>
         </div>
       </div>
     );
