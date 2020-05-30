@@ -1,23 +1,26 @@
-.dropdown{
+.dropdown {
   background-color: white;
   position: fixed;
   right: 0;
   width: 250px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   z-index: 15;
 }
-.dropdownBtn{
-  padding:15px;
+
+.dropdownBtn {
+  padding: 15px;
   font-size: 24px;
   display: block;
   border-bottom: 1px solid grey;
   text-decoration: none;
   color: #222;
 }
-.dropdownBtn:hover{
+
+.dropdownBtn:hover {
   background-color: #f2f1ef;
   cursor: pointer;
 }
-.hidden{
+
+.hidden {
   display: none;
 }

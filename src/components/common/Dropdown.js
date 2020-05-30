@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router';
+import React, {Component} from 'react';
+import {Link} from 'react-router';
 import './Dropdown.css';
 
 class Dropdown extends Component {
-  constructor(){
+  constructor() {
     super()
     this.toggle = this.toggle.bind(this)
   }
-  toggle(){
+
+  toggle() {
     this.props.toggle()
   }
+
   render() {
-    const currentClass = 'dropdown '+this.props.className;
+    const currentClass = 'dropdown ' + this.props.className;
     return <div className={currentClass} onClick={this.toggle}>
       <Link to="/about" className="dropdownBtn">About</Link>
       <Link to="/portfolio" className="dropdownBtn">Portfolio</Link>
