@@ -1,0 +1,38 @@
+.conway-title {
+  font-family: 'Open Sans', sans-serif;
+  width: 550px;
+  margin: 20px auto;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.game-btn {
+  padding: 5px 15px;
+  font-size: 20px;
+  margin: 5px 10px;
+  background-color: #bfbfbf;
+  border-radius: 10px;
+}
+
+.game-prep {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover, .st-btn:focus {
+  background: #222;
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.99);
+}

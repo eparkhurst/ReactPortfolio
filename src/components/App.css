@@ -11,24 +11,24 @@
 .App-header {
   position: fixed;
   z-index: 1;
-  top:0;
+  top: 0;
   background-color: #222;
   height: 70px;
   width: 100vw;
   padding: 20px;
   color: #f2f1ef;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .headerBtn:visited {
-  color:#f2f1ef;
+  color: #f2f1ef;
 }
 
 .headerBtn {
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: 36px;
-  margin:0 20px;
+  margin: 0 20px;
 }
 
 .App-intro {
@@ -55,27 +55,36 @@
   height: 50px;
 }
 
+.page-wrapper {
+  margin-top: 110px;
+  text-align: center;
+  padding-top: 5px;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
 nav {
   float: right;
   margin-top: 17px;
   margin-right: 60px;
 }
 
-@media (max-width:700px) {
-  nav{
+@media (max-width: 700px) {
+  nav {
     display: none;
   }
-  .hamburger-icon{
+
+  .hamburger-icon {
     display: block;
   }
 }
 
 .cover {
-  top:0;
+  top: 0;
   left: 0;
   position: fixed;
-  width:100vw;
-  height:100vh;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
   z-index: 2;
   opacity: .3;
