@@ -3,8 +3,8 @@
 
 
 "@babel/runtime@^7.1.2", "@babel/runtime@^7.5.5":
-  version "7.10.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.1.tgz#b6eb75cac279588d3100baecd1b9894ea2840822"
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1259,8 +1259,8 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000554, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30001070"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30001070.tgz#eacb9a6924d43daabfda13cfde4e67c5b9469dff"
+  version "1.0.30001072"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30001072.tgz#27b22a0b521c2c5cfb50ce500a101d9f2ee90d49"
 
 cardinal@^2.1.1:
   version "2.1.1"
@@ -4943,7 +4943,7 @@ react-router-dom@^5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router@5.2.0, react-router@^5.2.0:
+react-router@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.2.0.tgz#424e75641ca8747fbf76e5ecca69781aa37ea293"
   dependencies:
