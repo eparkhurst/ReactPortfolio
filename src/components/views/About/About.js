@@ -17,18 +17,18 @@ class About extends Component {
       </div>
       <div className="about-panel contact-me">
         <h1>Contact Me</h1>
-        <a href="https://www.linkedin.com/in/eliparkhurst" target="_blank" className="connect-link">
+        <a href="https://www.linkedin.com/in/eliparkhurst" target="_blank" rel="noopener noreferrer" className="connect-link">
           <span className="fa fa-linkedin-square"/>
           Linked In
         </a>
-        <a href="https://github.com/eparkhurst" target="_blank" className="connect-link">
+        <a href="https://github.com/eparkhurst" target="_blank" rel="noopener noreferrer"   className="connect-link">
           <span className="fa fa-github-square"/>
           Git Hub
         </a>
         <a href="mailto:eli.parkhurst@gmail.com" className="connect-link">
           <span className="fa fa-envelope-square"/>
           Email</a>
-        <a href="/Resume-ElijahParkhurst.pdf" target="_blank" className="connect-link">
+        <a href="/Resume-ElijahParkhurst.pdf" target="_blank" rel="noopener noreferrer" className="connect-link">
           <span className="fa fa-file-pdf-o"/>
           Resume
         </a>
