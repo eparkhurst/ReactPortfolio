@@ -1,6 +1,3 @@
-# New Portfolio Site using React
+# Portfolio Site
 
-I was recently turned down for a job because my portfolio site didn't look the same in safari.
-So... I redesigned it. I went for a material design and kept it simple.
-I used React and wrote all the CSS from scratch. And yes, it looks exactly the same in Firefox
-and Safari as it does in chrome. 
+This is a fairly basic portfolio site using react. It was originally put together in 2016 to spite a recruiter that said my old site looked bad in safari, but I have been updating it every time I'm looking for work.
