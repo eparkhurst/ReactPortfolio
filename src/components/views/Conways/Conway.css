@@ -1,6 +1,6 @@
 .conway-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .conway-title {
@@ -12,25 +12,55 @@
   font-weight: 400;
 }
 
-.controls {
+.side-section {
   display: flex;
   flex-direction: column;
+  max-width: 25rem;
+  margin: 0 10px;
+}
+
+.clear-generate {
+  display: flex;
+  margin-top: 7px;
+  justify-content: space-between;
 }
 
 .game-btn {
   padding: 5px 15px;
   font-size: 20px;
-  margin: 5px 10px;
   background-color: #bfbfbf;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
-.game {
-  /*padding-top: 30px;*/
+.st-btn {
+  padding: 10px;
+  width: 100%;
+}
+
+.sm-btn {
+  width: 197px;
 }
 
 .game-prep {
   font-family: 'Open Sans', sans-serif;
+}
+
+.rule-header {
+  font-family: 'Open Sans', sans-serif;
+  margin: 15px 0;
+  font-size: 25px;
+}
+
+.rules {
+  padding: 5px;
+}
+
+.rules p {
+  margin-top: 0;
+}
+
+.rules li {
+  margin: 3px 0;
 }
 
 button:focus {
@@ -44,4 +74,14 @@ button:hover, .st-btn:focus {
 
 button:active {
   transform: scale(0.99);
+}
+
+@media (max-width: 1000px) {
+  .conway-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-section {
+    margin-top: 10px;
+  }
 }

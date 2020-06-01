@@ -42,6 +42,7 @@ class Conway extends Component {
   }
 
   render() {
+    const { running } = this.state;
     return (
       <div>
         <h2 className="conway-title">Conway's Game of Life</h2>
@@ -52,31 +53,46 @@ class Conway extends Component {
               this.child = instance;
             }} height="50" width="50"/>
           </div>
-          <div className="controls">
-            <button
-              className="game-btn st-btn"
-              onClick={this.start}
-            >
-              Start
-            </button>
-            <button
-              className="game-btn st-btn"
-              onClick={this.stop}
-            >
-              Stop
-            </button>
-            <button
-              className="game-btn"
-              onClick={this.blank}
-            >
-              Clear
-            </button>
-            <button
-              className="game-btn"
-              onClick={this.random}
-            >
-              Generate Random
-            </button>
+          <div className="side-section">
+            <div className="controls">
+              <div>
+                { running ?
+                  <button
+                    className="game-btn st-btn"
+                    onClick={this.stop}
+                  >
+                    Stop
+                  </button>
+                  :
+                  <button
+                    className="game-btn st-btn"
+                    onClick={this.start}
+                  >
+                    Start
+                  </button>
+                }
+              </div>
+              <div className="clear-generate">
+                <button
+                  className="game-btn sm-btn"
+                  onClick={this.blank}
+                >
+                  Clear
+                </button>
+                <button
+                  className="game-btn sm-btn"
+                  onClick={this.random}
+                >
+                  Generate Random
+                </button>
+            </div>
+            </div>
+            <h3 className='rule-header'>The Rules</h3>
+            <div className="rules">
+              <p>Any live cell with two or three live neighbours survives.</p>
+              <p>Any dead cell with three live neighbours becomes a live cell.</p>
+              <p>All other live cells die in the next generation. Similarly, all other dead cells stay dead.</p>
+            </div>
           </div>
         </div>
       </div>
