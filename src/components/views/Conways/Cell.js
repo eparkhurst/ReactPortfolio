@@ -18,7 +18,6 @@ class Cell extends Component {
 
   styles = () => {
     let style = {
-      backgroundColor: 'red',
       width: '12px',
       height: '12px'
     };

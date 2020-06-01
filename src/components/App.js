@@ -45,7 +45,7 @@ class App extends Component {
           <nav>
             <NavLink activeClassName="selected" to="/about" className="headerBtn">About</NavLink>
             <NavLink activeClassName="selected" to="/portfolio" className="headerBtn">Portfolio</NavLink>
-            <NavLink activeClassName="selected" to="/conways" className="headerBtn">Conways</NavLink>
+            <NavLink activeClassName="selected" to="/conways" className="headerBtn">Conway's</NavLink>
           </nav>
         </div>
         <div className="page-wrapper">
