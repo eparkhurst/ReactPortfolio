@@ -1,3 +1,8 @@
+.conway-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
 .conway-title {
   font-family: 'Open Sans', sans-serif;
   width: 550px;
@@ -9,7 +14,7 @@
 
 .controls {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .game-btn {
@@ -18,6 +23,10 @@
   margin: 5px 10px;
   background-color: #bfbfbf;
   border-radius: 10px;
+}
+
+.game {
+  /*padding-top: 30px;*/
 }
 
 .game-prep {

@@ -6,7 +6,9 @@ class Conway extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      running: false
+    }
   }
 
   random = () => {
@@ -20,13 +22,15 @@ class Conway extends Component {
   };
 
   start = () => {
-    console.log('hit');
-    let interval = setInterval(this.iterate, 250);
-    this.setState({interval: interval});
+    if(!this.state.running) {
+      let interval = setInterval(this.iterate, 250);
+      this.setState({interval, running: true});
+    }
   };
 
   stop = () => {
-    clearInterval(this.state.interval)
+    clearInterval(this.state.interval);
+    this.setState({ running: false })
   };
 
   iterate = () => {
@@ -42,36 +46,38 @@ class Conway extends Component {
       <div>
         <h2 className="conway-title">Conway's Game of Life</h2>
         <h5 className="game-prep">Click any cell to toggle 'Life'</h5>
-        <div className="game">
-          <Cmap ref={instance => {
-            this.child = instance;
-          }} height="50" width="50"/>
-        </div>
-        <div className="controls">
-          <button
-            className="game-btn st-btn"
-            onClick={this.start}
-          >
-            Start
-          </button>
-          <button
-            className="game-btn st-btn"
-            onClick={this.stop}
-          >
-            Stop
-          </button>
-          <button
-            className="game-btn"
-            onClick={this.blank}
-          >
-            Generate Blank
-          </button>
-          <button
-            className="game-btn"
-            onClick={this.random}
-          >
-            Generate Random
-          </button>
+        <div className="conway-wrapper">
+          <div className="game">
+            <Cmap ref={instance => {
+              this.child = instance;
+            }} height="50" width="50"/>
+          </div>
+          <div className="controls">
+            <button
+              className="game-btn st-btn"
+              onClick={this.start}
+            >
+              Start
+            </button>
+            <button
+              className="game-btn st-btn"
+              onClick={this.stop}
+            >
+              Stop
+            </button>
+            <button
+              className="game-btn"
+              onClick={this.blank}
+            >
+              Clear
+            </button>
+            <button
+              className="game-btn"
+              onClick={this.random}
+            >
+              Generate Random
+            </button>
+          </div>
         </div>
       </div>
     )
