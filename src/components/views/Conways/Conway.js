@@ -89,8 +89,8 @@ class Conway extends Component {
             </div>
             <h3 className='rule-header'>The Rules</h3>
             <div className="rules">
-              <p>Any live cell with two or three live neighbours survives.</p>
-              <p>Any dead cell with three live neighbours becomes a live cell.</p>
+              <p>Any live cell with two or three live neighbors survives.</p>
+              <p>Any dead cell with three live neighbors becomes a live cell.</p>
               <p>All other live cells die in the next generation. Similarly, all other dead cells stay dead.</p>
             </div>
           </div>
