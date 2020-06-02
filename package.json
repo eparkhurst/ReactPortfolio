@@ -1,6 +1,5 @@
 {
   "name": "react-portfolio",
-  "homepage": "https://elijahparkhurst.com/about",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
