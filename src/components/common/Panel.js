@@ -33,7 +33,7 @@ class Panel extends Component {
       </div>
       <div className={this.state.className}>
         <a href={this.props.link} className={linkClass}><i className="fa fa-link"></i> Visit the Site</a>
-        <a href={this.props.github}><i className="fa fa-github-square"></i> See the Code on Github</a>
+        {this.props.github &&<a href={this.props.github}><i className="fa fa-github-square"></i> See the Code on Github</a>}
       </div>
     </div>
   }

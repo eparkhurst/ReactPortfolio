@@ -6,11 +6,18 @@ import allAngular from '../../../imgs/allangular.png'
 import codeRoadTrip from '../../../imgs/codeRoadTrip.png'
 import gingerMingle from '../../../imgs/gingerMingle.png'
 import paintedWithFire from '../../../imgs/paintedWithFire.png'
+import bounce from '../../../imgs/bounce.png'
 import gitUp from '../../../imgs/gitup.png'
 import Panel from '../../common/Panel'
 import './Portfolio.css'
 
 const imgArray = [
+  {
+    image: bounce,
+    title: 'Bounce',
+    description: 'Video Conferencing for large groups. Built with React, NodeJs, and WebRTC',
+    link: 'https://bounce.video'
+  },
   {
     image: codeRoadTrip,
     title: 'Code Road Trip',

@@ -61,10 +61,8 @@
 }
 
 .page-wrapper {
-  margin-top: 110px;
+  padding-top: 115px;
   text-align: center;
-  padding-top: 5px;
-  min-height: 100vh;
   padding-bottom: 50px;
 }
 
