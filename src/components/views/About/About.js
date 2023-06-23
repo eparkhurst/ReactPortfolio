@@ -10,8 +10,7 @@ class About extends Component {
         <img className="head-shot" src={headShot} alt="a handsome head shot of Elijah Parkhurst"/>
         <p className="about-text">
           I’m a Colorado kid doing my best to grow along with Denver. Professionally, I am a full stack developer with
-          an emphasis on the front end. I'm currently working almost entirely in React (with redux and sagas) but I have worked with
-          Angular, Python/Flask/Postgres and node/express/Postgres in the past.
+          an emphasis on the front end. I've worked in greenfield and legacy projects, run scum teams, and worked directly with a variety of stakeholders.
           If I look like a good fit for your team feel free to contact me.
         </p>
       </div>
