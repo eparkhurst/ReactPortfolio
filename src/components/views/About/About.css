@@ -6,16 +6,6 @@
   padding-bottom: 50px;
 }
 
-.about-title {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  font-family: 'Open Sans', sans-serif;
-  width: 400px;
-  margin: 20px auto;
-  font-size: 70px;
-  font-weight: 300;
-  transition: .3s;
-}
-
 .head-shot {
   width: 200px;
   height: 200px;
@@ -77,6 +67,10 @@
 
 .contact-me h1 + a {
   margin-top: 30px;
+}
+
+.contact-text {
+  margin-left: 7px;
 }
 
 @media (min-width: 650px) {
