@@ -19,7 +19,7 @@ class About extends Component {
                         <h2>Code Pricipals</h2>
                         <ul>
                             <li>
-                                <h3>Prioritize Readability </h3>
+                                <h3>Prioritize Readability</h3>
                                 <p>
                                     Ultimately we all want these projects to grow and to last for a while. That results
                                     in large code bases, often maintained by a few people. As someone who has had to
