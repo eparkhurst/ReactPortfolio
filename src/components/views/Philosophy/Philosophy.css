@@ -8,12 +8,6 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-
-.principals-wrapper {
-  /* display: flex;
-  flex-direction: row; */
-
-}
 .principals-panel {
   width: 90vw;
   padding-top: 20px;
@@ -26,6 +20,12 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding-bottom: 20px;
   transition: .3s;
+}
+.principals-panel p {
+  text-align: left;
+}
+.principals-panel h3 {
+  margin-top: 50px
 }
 
 .code-principals {
@@ -63,5 +63,15 @@ ul {
 }
 
 .general {
+  margin-bottom: 40px;
+  margin: auto;
+  color: #7e7e7e;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+  max-width: 700px;
+  text-align: center;
+}
+.general p {
+  text-align: left;
   margin-bottom: 40px;
 }

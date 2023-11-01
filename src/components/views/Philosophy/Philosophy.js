@@ -7,8 +7,8 @@ class About extends Component {
         return (
             <div>
                 <PageHeader title="Philosophy" />
-                <div className="principals-panel general">
-                    <p className="about-text">
+                <div className="general">
+                    <p>
                         My general code philosophy is to write code that is easy to read and easy to change. Even better
                         if it can be done quickly. Everything is nuanced, almost every pricipal has an exception at the
                         extremes.
@@ -65,11 +65,10 @@ class About extends Component {
                     </div>
                     <div className="principals-panel">
                         <h2>Management Pricipals</h2>
-                        <p>I wrote these from the perspective of being a manager</p>
                         <ul>
                             <li>
                                 <h3>Most people want to be good at their job</h3>
-                                <p>I see the Engineering Manager's job as helping people accomplish this goal</p>
+                                <p>I see the Engineering Manager's job as helping people accomplish this goal.</p>
                             </li>
                             <li>
                                 <h3>Meetings should be in blocks</h3>
